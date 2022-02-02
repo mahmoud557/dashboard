@@ -1,0 +1,152 @@
+dash-board{
+	width:100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+dash-board>top-div{
+	width: 100%;
+	height: 52px;
+	background: #ffffff;
+	align-self: center;
+	box-shadow: 0 0 5px 0 #00000069;
+	position: relative;
+	top: 0px;
+	padding: 0px 4px;
+	overflow: visible;
+	flex-shrink: 0;
+	justify-content: space-between !important;
+}
+
+dash-board>top-div>left-div{
+	max-width: 180px;
+	height: 100%;
+	min-width: 100px;
+	flex-shrink: 3;
+}
+dash-board>top-div>right-div{
+	width: 180px;
+	height: 100%;
+	padding: 0px 12px;
+	justify-content: flex-end !important;
+	flex-shrink: 3;
+	position: relative;
+	overflow: visible;
+}
+dash-board>top-div>right-div>in-out-slider{
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+	transform: scaleY(0);
+}
+dash-board>top-div>right-div>in-out-slider>div{
+	width: 100%;
+	height: 40px;
+	margin-bottom: 2px;
+	border-radius:6px; 
+	cursor: pointer;
+}
+dash-board>top-div>right-div>in-out-slider>div:hover{
+	background: rgb(238 238 238);
+}
+dash-board>top-div>right-div>in-out-slider>div>c-icon{
+	width: 40px;
+	height: 100%;
+}
+dash-board>top-div>right-div>in-out-slider>div>span{
+	flex:auto;
+    font-size: 14px;
+    font-family: system-ui;
+    font-weight: 600;
+    color: rgb(120 120 120);
+}
+
+dash-board>top-div>right-div>c-icon{
+	width: 38px;
+	height: 38px;
+	background: white;
+	border-radius: 50%;
+	box-shadow: 0 0 3px 1px #00000061;
+	cursor: pointer;
+	min-width: 38px;
+}
+
+dash-board>layers-holder-head{
+	/* flex:auto; */
+	height: 38px;
+	max-height: 48px;
+	margin: 12px 0px 8px;
+	flex-shrink: 0;
+	border-bottom: 1px solid #b6b7b980;
+	border-top: 1px solid #b6b7b980;
+	width: 80%;
+	align-self: center;
+}
+dash-board>layers-holder-head>div{
+	height: 100%;
+	padding: 4px 12px;
+	margin: 0px 14px;
+	filter: opacity(0.6);
+	cursor: pointer;
+}
+
+dash-board>layers-holder-head>div.active{
+	filter: opacity(1) !important;
+	border-bottom: 2px solid #787878;
+}
+
+dash-board>layers-holder-head>div>c-icon{
+	width: 38px;
+	margin: 0px 0px;
+	transition: all .3s;
+	justify-content: flex-start !important;
+}
+dash-board>layers-holder-head>div>span{
+	font-size: 14px;
+	font-family: system-ui;
+	font-weight: 600;
+	color: rgb(120 120 120);
+	margin-left: -6px;
+}
+@media only screen and (max-width: 600px) {
+	dash-board>layers-holder-head>div>c-icon{
+		width: 52px;
+		margin: 0px 10px;
+		filter: opacity(0.4);
+		transition: all .2s;
+	}	
+	dash-board>layers-holder-head>div?c-icon>img{
+		min-width: 54% !important;
+	}
+}
+
+
+dash-board>layers-holder-head>div:hover{
+	filter: opacity(0.8);
+}
+
+dash-board>bottom-div{
+	flex:auto;
+	width: 100%;
+}
+
+dash-board>bottom-div>layers-holder{
+	width: 100%;
+	height: 100%;
+	align-items: flex-start !important;
+	/* margin-top: 0px; */
+	padding: 4px;
+}
+
+dash-board>bottom-div>layers-holder>.Hestory{
+	width: 100%;
+	height: 100%;
+	background: rgb(230 255 255)
+}
+dash-board>bottom-div>layers-holder>.Account{
+	width: 80%;
+	height: 96%;
+	background: rgb(230 245 255);
+	box-shadow: 0 0 3px 0 #00000075;
+}

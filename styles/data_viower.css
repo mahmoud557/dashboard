@@ -1,0 +1,199 @@
+data-viower{
+    border: none;
+    width: 100%;
+    height: 100%;
+    /* background: #2d2d2d; */
+    display: flex;
+    flex-direction: row;
+}
+
+data-viower > left-div{
+	flex:auto;
+	/* background: rgb(233 233 233); */
+	/* border: 1px solid #181818ba; */
+	direction: ltr;
+	zoom: 1;
+	overflow: auto;
+}
+
+data-viower > left-div::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    background: rgb(180 180 180);
+    border-radius: 2px;
+    padding: 1px;
+}
+
+data-viower > left-div::-webkit-scrollbar-thumb {
+    background: rgb(140 140 140);
+    border-radius: 4px;
+    width: 2px;
+}
+
+data-viower > left-div::-webkit-scrollbar-track {
+    border-radius: 2px
+}
+
+data-viower > left-div table{
+    color: rgb(94, 94, 94);
+    font-family: system-ui;
+    zoom: 0.65;
+    width: 100%;
+    z-index: 2;
+    overflow: visible;
+    background: rgb(251 251 251);
+}
+
+data-viower > left-div table>tr:nth-child(even){
+    background: rgb(245 245 245);
+}
+
+
+data-viower > left-div th{
+    color: rgb(94, 94, 94);
+    margin: 5px;
+    padding: 18px;
+    /* width: 180px; */
+    min-width: 180px;
+    max-width: 240px;
+    font-weight: lighter;
+    background: rgb(255 255 255);
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(216, 216, 216, 1);
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+}
+
+data-viower > left-div td{
+    margin: 5px;
+    padding: 12px;
+    text-align: center;
+    /* border-left: 1px solid #00000026; */
+    /*word-break: break-word;*/
+    /*direction: ltr;*/
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(228, 228, 228, 1);
+    max-width: 406px;
+    /* margin-left: 0px; */
+    padding-left: 23px;
+    padding-right: 23px;
+    font-size: 22px;
+}
+
+data-viower > left-div td::selection {
+  background-color: rgb(94 94 94);
+  color:  rgb(240 240 240);
+}
+data-viower > right-div{
+	width: 50px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	/* border-left: 1px solid #24242496; */
+	box-shadow: 0 0 4px 0 #000000d9;
+	flex-shrink: 0;
+	z-index: 2;
+	background: white;
+	display: none;
+}
+
+data-viower > right-div >top-div{
+	width: 100%;
+	height:50px;
+	display: none !important;
+}
+
+data-viower > right-div >top-div
+c-icon:hover{
+	filter: invert(0.2);
+}
+
+data-viower > right-div >top-div
+c-icon img{
+	max-height: 40px;
+}
+
+data-viower >right-div>bottom-div{
+	flex:auto;
+	justify-content: start !important;
+	padding-top: 8px;
+	position: relative;
+}
+data-viower >right-div>bottom-div c-icon{
+    height:40px;
+}
+
+data-viower >right-div>bottom-div> c-icon:hover{
+    filter: invert(0.2);
+}
+data-viower >right-div>bottom-div> .files_typs_aria{
+    width: 90%;
+    height: 0px;
+    /* background: #2d2d2d; */
+    box-shadow: inset 0 0 2px 0 black;
+    justify-content: space-evenly;
+    transition: all .7s;
+    overflow: hidden;
+}
+
+
+data-viower >right-div>bottom-div> .zoom_input{
+    width:100%;
+    height:140px;
+    position: absolute;
+    bottom: 10px;
+}
+
+data-viower >right-div>bottom-div > .zoom_input >
+top-div{
+    flex:auto;
+}
+
+data-viower >right-div>bottom-div > .zoom_input >
+top-div input{
+    transform: rotate(-90deg);
+    overflow: hidden;
+    width: 90px;
+    -webkit-appearance: none;
+    background-color: #242424;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px 0px #000000cc;
+    cursor: pointer;
+}
+
+
+data-viower >right-div>bottom-div > .zoom_input >
+top-div input::-webkit-slider-runnable-track {
+  height: 9px;
+  -webkit-appearance: none;
+  color: #13bba4;
+  margin-top: -1px;
+  border-radius: 50px;
+}
+
+data-viower >right-div>bottom-div > .zoom_input >
+top-div input::-webkit-slider-thumb {
+  width: 5px;
+  -webkit-appearance: none;
+  height: 20px;
+  background: #cacaca;
+  box-shadow: -80px 0 0 80px  #444444;
+
+
+}
+
+
+data-viower >right-div>bottom-div > .zoom_input >
+bottom-div{
+   width:100%;
+   height:40px;
+}
+
+data-viower >right-div>bottom-div > .zoom_input >
+bottom-div c-icon{
+    width:100%;
+    height:100%;
+}

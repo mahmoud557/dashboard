@@ -1,0 +1,127 @@
+editable-info-line{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: system-ui;
+	margin: 0px 10px;
+}
+
+editable-info-line>.on_edit{
+    margin: 6px;
+    border: 1px solid #aaabac8a;
+    padding: 0px 8px;
+    border-radius: 5px;	
+}
+
+editable-info-line>.edit_button{
+	/* width:80px; */
+	height: 90%;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding: 6px; */
+	font-size: 13px;
+	font-weight: 600;
+	color: rgb(130 130 130);
+	font-family: system-ui;
+	white-space: nowrap;
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-left: 22px;
+	margin-right: 4px;
+	padding: 8px 12px;
+	border-radius: 2px;
+	box-shadow: 0 0 1px 0 #00000096;
+	transition: all .2s;
+}
+editable-info-line>.save_button{
+	/* width:80px; */
+	height: 90%;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding: 6px; */
+	font-size: 13px;
+	font-weight: 600;
+	color: rgb(255 255 255);
+	font-family: system-ui;
+	white-space: nowrap;
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-left: 22px;
+	padding: 8px 20px;
+	border-radius: -1px;
+	box-shadow: 0 0 1px 0 #00000096;
+	border-radius: 3px;
+	transition: all .2s;
+	background: rgb(10 130 20);
+}
+editable-info-line>.cancle_button{
+	/* width:80px; */
+	height: 90%;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding: 6px; */
+	font-size: 13px;
+	font-weight: 600;
+	color: rgb(140 140 140);
+	font-family: system-ui;
+	white-space: nowrap;
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-left: 6px;
+	margin-right: 4px;
+	padding: 8px 14px;
+	box-shadow: 0 0 1px 0 #00000096;
+	transition: all .2s;
+}
+editable-info-line>.edit_button:hover{
+	background: rgb(230 230 230);
+}
+editable-info-line>.save_button:hover{
+	background: rgb(0 120 10);
+}
+editable-info-line>.cancle_button:hover{
+	background: rgb(230 230 230);
+}
+editable-info-line>left-div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(120, 120, 120, 1);
+    font-family: system-ui;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+editable-info-line>right-div{
+	flex: auto;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 13px;
+	color: rgba(100, 100, 100, 1);
+	letter-spacing: 1px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0px 0px;
+	outline: none;
+}
+editable-info-line>right-div::selection {
+  background-color: rgb(29 126 229) !important;
+}
+
+editable-info-line>right-div::selection{
+    color: white;
+}
