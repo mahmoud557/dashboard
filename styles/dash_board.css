@@ -54,6 +54,7 @@ dash-board>top-div>right-div>in-out-slider>div>c-icon{
 	width: 40px;
 	height: 100%;
 }
+
 dash-board>top-div>right-div>in-out-slider>div>span{
 	flex:auto;
     font-size: 14px;
@@ -67,11 +68,15 @@ dash-board>top-div>right-div>c-icon{
 	height: 38px;
 	background: white;
 	border-radius: 50%;
-	box-shadow: 0 0 3px 1px #00000061;
+	box-shadow: 0 0 3px 1px #00000073;
 	cursor: pointer;
 	min-width: 38px;
+	padding: 2px;
 }
 
+dash-board>top-div>right-div>c-icon>img{
+	border-radius: inherit;
+}
 dash-board>layers-holder-head{
 	/* flex:auto; */
 	height: 38px;

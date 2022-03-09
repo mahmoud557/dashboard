@@ -1,29 +1,7 @@
 class Hestory_part extends HTMLElement {
     constructor() {
         super();
-        this.data_viower_header=[
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true},
-        {Product:10,Reference:20,Date:'kkkk',Amount:'aaa',status:true}
-        ]
+        this.order_list;
         this.firest_connect_state=false;
     }
 
@@ -45,8 +23,8 @@ class Hestory_part extends HTMLElement {
     }
 
     render_data_viower_header(){
-        this.children[1].children[0].render_table_header(this.data_viower_header)
-        this.children[1].children[0].render_table_data_chunk_text(this.data_viower_header)
+        this.children[1].children[0].render_table_header(this.order_list)
+        this.children[1].children[0].render_table_data_chunk_text(this.order_list)
     }
 
     run_on_Attribute_change(name){

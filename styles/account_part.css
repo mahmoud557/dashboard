@@ -50,7 +50,10 @@ account-part>left-div>bottom-div>top-div>c-icon{
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	box-shadow: 0 0 3px 0 #16161687;
+	box-shadow: 0 0 3px 0px #161616bf;
+}
+account-part>left-div>bottom-div>top-div>c-icon>img{
+	border-radius: inherit;
 }
 account-part>left-div>bottom-div>bottom-div{
 	flex:auto;
