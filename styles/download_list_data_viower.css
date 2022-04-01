@@ -65,7 +65,7 @@ download-list>bottom-div>data-viower > left-div th{
     position: relative;
     z-index: 2;
     overflow: visible;
-    text-align: start;
+    /* text-align: start; */
 }
 
 download-list>bottom-div>data-viower > left-div td{

@@ -56,7 +56,7 @@ download-list>bottom-div>data-viower>left-div>table>tr>td>.auther{
 	flex-shrink: 0;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	text-align: start;
+	text-align: center;
 }
 
 download-list>bottom-div>data-viower>left-div>table>tr>td>.License{

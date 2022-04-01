@@ -120,7 +120,7 @@ class Dash_Board extends HTMLElement {
 
     create_download_list(){
         this.download_list=document.createElement('download-list')
-        this.download_list.order_list=this.account_data.download_list;
+        this.download_list.download_list=this.account_data.download_list;
         this.download_list.setAttribute('layer_id','Downloads')
         this.download_list.setAttribute('display','flex')
         this.children[2].children[0].appendChild(this.download_list)

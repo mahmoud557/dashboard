@@ -2,8 +2,9 @@ class Download_list extends HTMLElement {
     constructor() {
         super();
         this.data_viower_header=[
-            {Details:null,Author:null,License:null,Attribution:null}
+            {Details:null,Provider:null,Price:null,Attribution:null}
         ]
+        this.download_list;
 
         this.firest_connect_state=false;
     }
@@ -24,42 +25,26 @@ class Download_list extends HTMLElement {
             </bottom-div>
         `       
     }
-
-    get_download_list(){
-        return [
-            {details:null,auther:'test',License:null,Attribution:null},
-            {details:null,auther:'test',License:null,Attribution:null},
-            {details:null,auther:'test',License:null,Attribution:null},
-            {details:null,auther:'test',License:null,Attribution:null},
-            {details:null,auther:'test',License:null,Attribution:null},
-            {details:null,auther:'test',License:null,Attribution:null},
-            {details:null,auther:'test',License:null,Attribution:null},
-            {details:null,auther:'test',License:null,Attribution:null},
-            {details:null,auther:'test',License:null,Attribution:null},
-        ]
-    }
-
     create_tr_html_content_object(download_row_object){
         var details=document.createElement('div');
         details.classList.add('Details');
         details.innerHTML=`
             <left-div class='center'>
-                <c-icon src='icons/back.jpg' size=90 ></c-icon>
+                <c-icon src='${download_row_object['thump']}' size=90 ></c-icon>
             </left-div>
-            <right-div class='center'>Rong shdow From Athor Land in the City</right-div>
+            <right-div class='center'>${download_row_object['name']}</right-div>
         `
 
-        var auther=document.createElement('div');
-        auther.classList.add('auther');
-        auther.innerHTML=`
-            freebick
+        var Provider=document.createElement('div');
+        Provider.classList.add('auther');
+        Provider.innerHTML=`
+            ${download_row_object['provider']}
         `       
 
-        var License=document.createElement('div');
-        License.classList.add('License');
-        License.innerHTML=`
-            <c-icon src='icons/downloads2.svg' size=64 ></c-icon>
-            <right-div class='center'>Download licince</right-div>
+        var Price=document.createElement('div');
+        Price.classList.add('auther');
+        Price.innerHTML=`
+            ${download_row_object['price']}
         `       
 
         var Attribution=document.createElement('div');
@@ -70,15 +55,14 @@ class Download_list extends HTMLElement {
                 <right-div class='center'>Download</right-div>           
             </div>
         `              
-        return {Details:details,Author:auther,License:License,Attribution:Attribution}  
+        return {Details:details,Provider:Provider,Price:Price,Attribution:Attribution}  
     }
 
 
     async render_download_list(){
         this.children[1].children[0].render_table_header(this.data_viower_header)
-        var download_list=await this.get_download_list()
         var tr_html_content_objects=[]
-        for(var download_list_row of download_list){
+        for(var download_list_row of this.download_list){
            var tr_html_content_object =this.create_tr_html_content_object(download_list_row);
            tr_html_content_objects.push(tr_html_content_object)
         }
